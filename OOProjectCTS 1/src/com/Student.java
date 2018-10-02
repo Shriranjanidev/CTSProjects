@@ -15,8 +15,8 @@ public class Student {
 	private String qualification;
 	private String nationality;
 
-	String admissionid;
-	String result;
+	private String admissionid;
+	private String result;
 
 	public String getName() {
 		return name;
@@ -90,16 +90,22 @@ public class Student {
 	public void setNationality(String nationality) {
 		this.nationality = nationality;
 	}
-
-	public String getAdmissionId() {
+	
+	public String getAdmissionid() {
 		return admissionid;
 	}
-
+	public void setAdmissionid(String admissionid) {
+		this.admissionid = admissionid;
+	}
 	public String getResult() {
 		return result;
 	}
-	public Student(String name) {
+	public void setResult(String result) {
+		this.result = result;
+	}
+	public Student(String name, int age) {
 		this.name = name;
+		this.age = age;
 	}
 
 	public void registerStudent() {
